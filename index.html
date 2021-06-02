@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slideshow.css">
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+</head>
+<body>
+<nav>
+	<div class="logo">
+		<h4><b>Electronic</b></h4>
+	</div>
+	<ul class="link">
+		<li><a href="index.html"><i class ="fa fa-home" aria-hidden="true"></i>Home</li>
+			<li><a href="project-list.html"><i class ="fa fa-list" style="font-size:12px;" aria-hidden="true"></i>Project-List</li>
+				<li><a href="about.html"><i class ="fa fa-info-circle" aria-hidden="true"></i>About</li>
+	</ul>
+</nav>
+<div class="w3-content w3-section" style="max-width:1500px">
+  <a href="https://www.youtube.com/watch?v=QUQta4f_87E" target="_blank"><img class="mySlides" src="1.jpg" style="width:100%;height:400px;"></a>
+  <a href="https://www.youtube.com/watch?v=Z44f4B6p-Kk" target="_blank"><img class="mySlides" src="2.jpg" style="width:100%;height:400px;"></a>
+  <a href="https://www.youtube.com/watch?v=Q36NbjPMV5k" target="_blank"><img class="mySlides" src="3.jpg" style="width:100%;height:400px"></a>
+</div>
+<hr style="height:2px;background-color:gray">
+
+<div class="gallery">
+  <a target="_blank" href="arduino.jpg">
+    <img src="arduino.jpg" alt="Cinque Terre" style="width:100%;height:120px;">
+  </a>
+  <div class="desc"><a href="https://www.electronicscomp.com/arduino-uno-r3-smd-atmega328p-board-compatible-india?search=arduino%20uno%20r3">Arduino Uno R3 Development Board</a></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="bluetooth.jpg">
+    <img src="bluetooth.jpg" alt="Bluetooth module" style="width:100%;height:120px;">
+  </a>
+  <div class="desc"><a href="https://www.electronicscomp.com/sensors-module/modules/bluetooth/at-09-bluetooth-4.0-uart-transceiver-module-cc2541-compatible-with-hm-10">AT-09 Bluetooth 4.0 UART Transceiver Module </a></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="raspberry.jpg">
+    <img src="raspberry.jpg" alt="raspberry-pi3" style="width:100%;height:120px;">
+  </a>
+  <div class="desc"><a href="https://www.electronicscomp.com/raspberry-pi/raspberry-pi-boards/buy-raspberry-pi-3-model-b-plus-india">Raspberry Pi3 - Processor with 1GB Ram)</a></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="servo.jpg">
+    <img src="servo.jpg" alt="Mountains" style="width:100%;height:120px;">
+  </a>
+  <div class="desc"><a href="https://www.electronicscomp.com/towerpro-sg90-9gm-micro-servo-motor">SG90 Servo - 9 gms Mini/Micro Servo Motor</a></div>
+</div>
+<button><a href="seeall.html">See All</a></button>
+
+
+<div class="footer">
+  <div class="inner-footer">
+  <div class="footer-items">
+    <h2>Contact Us</h2>
+    <div class="border"></div>
+    <ul style="padding:0px;">
+      <li><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;Near Sanskar Public School, Banmore, Morena, Pincode:-476444</i></li><br>
+
+      <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(+91)9039721946</li><br>
+      
+      <li><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;mrinshu13@gmail.com</li>
+    
+    </div>
+
+</div>
+</div>
+<div class="footer-bottoms">
+    <h4 style="margin-top:-8%; margin-left:5%;">
+Last Updated at : 23-MAY-2020 11:42:00 PM</h4>
+  </div>
+  </div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); // Change image every 3 seconds
+}
+</script>
+</body>
+</html>
